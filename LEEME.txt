@@ -1,0 +1,21 @@
+INVITACIÓN DE CALEB
+
+Coloca estas imágenes dentro de la carpeta images:
+
+image1.jpg       = cancha con el arco al frente
+image2.png       = balón sin fondo
+image3.png       = jugador decorativo
+image4.png       = jugador decorativo
+image5.png       = jugador decorativo
+image6.png       = jugador decorativo
+imagen-caleb.png = retrato de Caleb
+
+Para activar las confirmaciones por WhatsApp:
+1. Abre script.js.
+2. Busca: const whatsappNumber = "591XXXXXXXX";
+3. Reemplázalo por el número real con código de país, sin +, espacios ni guiones.
+
+Ejemplo para Bolivia:
+const whatsappNumber = "59170000000";
+
+La hora aparece como 15:00. No se agrega "pm" porque el formato de 24 horas ya indica que es por la tarde.

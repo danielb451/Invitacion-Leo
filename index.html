@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<<<<<<< HEAD
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07152f">
+  <title>Invitación de Leo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="opening" id="opening" aria-label="Patea el balón para abrir la invitación">
+      <div class="shade"></div>
+      <div class="opening-copy" id="openingCopy">
+        <span class="eyebrow">TIENES UNA MISIÓN</span>
+        <h1>¡PATEA EL BALÓN!</h1>
+        <p>Marca el gol para desbloquear la invitación</p>
+      </div>
+
+      <button class="ball" id="ball" type="button" aria-label="Patear el balón">
+        <img src="images/image2.png" alt="Balón de fútbol">
+        <span class="pulse"></span>
+      </button>
+
+      <div class="touch-note" id="touchNote">TOCA EL BALÓN ☝</div>
+      <div class="goal-text" id="goalText">¡GOOOOL!</div>
+    </section>
+
+    <section class="invitation" id="invitation" aria-hidden="true">
+      <div class="confetti" id="confetti"></div>
+
+      <img src="images/image3.png" class="player player-a" alt="">
+      <img src="images/image4.png" class="player player-b" alt="">
+      <img src="images/image5.png" class="player player-c" alt="">
+      <img src="images/image6.png" class="player player-d" alt="">
+
+      <div class="hero">
+        <span class="eyebrow">FIESTA FUTBOLERA</span>
+        <h2>¡ESTÁS CONVOCADO!</h2>
+        <p>A celebrar el cumpleaños de</p>
+
+        <div class="photo-wrap">
+          <img src="images/imagen-caleb.png" alt="Caleb" class="caleb-photo">
+          <div class="age-badge"><strong>4</strong><span>AÑOS</span></div>
+        </div>
+
+        <h1 class="name">LEO</h1>
+        <p class="subtitle">¡Ven a celebrar un cumpleaños de campeonato!</p>
+      </div>
+
+      <section class="info-card">
+        <div class="info-item">
+          <span class="icon">📅</span>
+          <div><small>FECHA</small><strong>Sabado 22 de Agosto</strong></div>
+        </div>
+        <div class="info-item">
+          <span class="icon">⏰</span>
+          <div><small>HORA</small><strong>15:00</strong></div>
+        </div>
+        <div class="info-item">
+          <span class="icon">📍</span>
+          <div><small>LUGAR</small><strong>Domicilio</strong><p>Calle guaui 878</p></div>
+        </div>
+
+        <a class="button button-map" href="https://maps.app.goo.gl/egGvN1G62uuJiDXEA" target="_blank" rel="noopener noreferrer">🗺️ Ver ubicación</a>
+      </section>
+
+      <section class="dress-code">
+        <span>👕</span>
+        <div><small>INDUMENTARIA</small><strong>Ven con la polera de tu equipo favorito</strong></div>
+      </section>
+
+      <section class="confirmation">
+        <p>¡Tu presencia será nuestro mejor gol!</p>
+        <button class="button button-confirm" id="confirmButton" type="button">⚽ Confirmar asistencia</button>
+      </section>
+
+      <footer>
+        <span>⚽</span>
+        <p>Te esperamos para vivir una tarde inolvidable</p>
+        <strong>¡NO FALTES!</strong>
+      </footer>
+    </section>
+
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" data-close aria-label="Cerrar">×</button>
+        <div class="modal-ball">⚽</div>
+        <h2 id="modalTitle">Confirmar asistencia</h2>
+        <p>Escribe tu nombre para preparar el mensaje.</p>
+        <label for="guestName">Nombre del invitado</label>
+        <input id="guestName" type="text" placeholder="Ej.: Roberto" autocomplete="name">
+        <button class="button button-whatsapp" id="whatsappButton" type="button">Enviar por WhatsApp</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+=======
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Leo Fest ⚽</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ========================================= -->
+<!-- PANTALLA INICIAL - METE EL GOL -->
+<!-- ========================================= -->
+
+<section class="inicio-juego" id="inicioJuego">
+
+    <div class="estadio-luces"></div>
+
+    <div class="inicio-titulo">
+
+        <p>
+            ⚽ ESTÁS CONVOCADO ⚽
+        </p>
+
+        <h1>
+            LEO
+            <span>FEST</span>
+        </h1>
+
+        <p class="instruccion">
+            Mete el gol para descubrir la invitación
+        </p>
+
+    </div>
+
+
+    <!-- PORTERÍA -->
+
+    <div class="zona-porteria">
+
+        <img
+            src="img/imagen1.jpg"
+            class="porteria"
+            alt="Portería"
+        >
+
+        <!-- EFECTO GOL -->
+
+        <div class="gol-texto" id="golTexto">
+            ¡GOOOL!
+        </div>
+
+    </div>
+
+
+    <!-- BALÓN -->
+
+    <button
+        class="balon-boton"
+        id="balonBoton"
+        aria-label="Patea el balón"
+    >
+
+        <img
+            src="img/imagen2.png"
+            class="balon"
+            id="balon"
+            alt="Balón"
+        >
+
+    </button>
+
+
+    <div class="tocar">
+
+        <span>👆</span>
+
+        <p>
+            TOCA EL BALÓN
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================================= -->
+<!-- INVITACIÓN -->
+<!-- ========================================= -->
+
+<main class="invitacion" id="invitacion">
+
+
+    <!-- PORTADA -->
+
+    <section class="hero">
+
+        <div class="contenido-hero">
+
+            <p class="mini-titulo">
+                HAS SIDO CONVOCADO AL
+            </p>
+
+            <h1>
+                LEO
+                <span>FEST</span>
+            </h1>
+
+            <p class="subtitulo">
+                ⚽ El partido más importante del año ⚽
+            </p>
+
+
+            <!-- PERSONAJES -->
+
+            <div class="equipo">
+
+                <img
+                    src="img/imagen4.png"
+                    class="jugador jugador1"
+                    alt="Jugador 1"
+                >
+
+                <img
+                    src="img/imagen5.png"
+                    class="jugador jugador2"
+                    alt="Jugador 2"
+                >
+
+                <div class="leo-container">
+
+                    <div class="brillo-leo"></div>
+
+                    <img
+                        src="img/imagen-leo.png"
+                        class="leo"
+                        alt="Leo"
+                    >
+
+                    <span class="nombre-leo">
+                        LEO
+                    </span>
+
+                </div>
+
+                <img
+                    src="img/imagen6.png"
+                    class="jugador jugador3"
+                    alt="Jugador 3"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="desliza">
+            DESLIZA
+            <span>↓</span>
+        </div>
+
+    </section>
+
+
+
+    <!-- MENSAJE -->
+
+    <section class="seccion seccion-verde reveal">
+
+        <div class="contenido">
+
+            <div class="icono">
+                ⚽
+            </div>
+
+            <p class="etiqueta">
+                ¡ATENCIÓN EQUIPO!
+            </p>
+
+            <h2>
+                Tenemos un partido
+                <span>muy especial</span>
+            </h2>
+
+            <p class="descripcion">
+                Leo está de cumpleaños y queremos que seas
+                parte de su equipo para vivir una tarde
+                llena de fútbol, diversión, goles y muchas
+                sorpresas.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FECHA -->
+
+    <section class="seccion fecha reveal">
+
+        <div class="numero-fondo">
+            22
+        </div>
+
+        <div class="contenido">
+
+            <p class="etiqueta etiqueta-oscura">
+                FECHA DEL PARTIDO
+            </p>
+
+            <h2 class="oscuro">
+                SÁBADO
+            </h2>
+
+
+            <div class="fecha-principal">
+
+                <span class="numero-dia">
+                    22
+                </span>
+
+                <div class="mes">
+
+                    <strong>
+                        AGOSTO
+                    </strong>
+
+                    <span>
+                        2026
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="hora">
+
+                <span class="hora-icono">
+                    ⏱
+                </span>
+
+                <div>
+
+                    <small>
+                        HORA DEL PARTIDO
+                    </small>
+
+                    <strong>
+                        4:00 PM
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- DIRECCIÓN -->
+
+    <section class="seccion ubicacion reveal">
+
+        <div class="contenido">
+
+            <div class="icono">
+                📍
+            </div>
+
+            <p class="etiqueta">
+                LUGAR DEL PARTIDO
+            </p>
+
+            <h2>
+                Calle
+                <span>
+                    Guaqui
+                </span>
+            </h2>
+
+            <p class="descripcion">
+                Aquí comenzará el mejor partido del año.
+            </p>
+
+
+            <a
+                href="https://maps.app.goo.gl/N5VUYQqySBm68AjJ8"
+                target="_blank"
+                class="boton"
+            >
+                📍 VER UBICACIÓN
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONVOCATORIA -->
+
+    <section class="seccion convocatoria reveal">
+
+        <div class="contenido">
+
+            <p class="etiqueta">
+                CONVOCATORIA OFICIAL
+            </p>
+
+            <h2>
+                Prepárate para
+                <span>
+                    jugar
+                </span>
+            </h2>
+
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <span>
+                        ⚽
+                    </span>
+
+                    <h3>
+                        Fútbol
+                    </h3>
+
+                    <p>
+                        Ven preparado para demostrar tus mejores jugadas.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <span>
+                        🎉
+                    </span>
+
+                    <h3>
+                        Diversión
+                    </h3>
+
+                    <p>
+                        Tendremos una tarde llena de sorpresas.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <span>
+                        🏆
+                    </span>
+
+                    <h3>
+                        Cumpleaños
+                    </h3>
+
+                    <p>
+                        Celebremos juntos este día especial de Leo.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONFIRMACIÓN -->
+
+    <section class="seccion final reveal">
+
+        <div class="contenido">
+
+            <div class="trofeo">
+                🏆
+            </div>
+
+            <p class="etiqueta">
+                ¿ACEPTAS LA CONVOCATORIA?
+            </p>
+
+            <h2>
+                ¡Te esperamos
+                <span>
+                    en el equipo!
+                </span>
+            </h2>
+
+            <p class="descripcion">
+                Confirma tu asistencia y prepárate para
+                celebrar junto a Leo.
+            </p>
+
+
+            <button
+                class="boton"
+                id="confirmar"
+            >
+                ⚽ CONFIRMAR ASISTENCIA
+            </button>
+
+
+            <div
+                class="mensaje-confirmacion"
+                id="mensajeConfirmacion"
+            >
+
+                ✅
+
+                <strong>
+                    ¡Asistencia confirmada!
+                </strong>
+
+                <p>
+                    Te esperamos para celebrar con Leo ⚽🎉
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div>
+            ⚽
+        </div>
+
+        <h2>
+            LEO FEST
+        </h2>
+
+        <p>
+            Sábado 22 de agosto • 4:00 PM
+        </p>
+
+        <span>
+            Calle Guaqui
+        </span>
+
+    </footer>
+
+</main>
+
+
+<div id="confetti"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+>>>>>>> efd7f3a (Invitacion cumpleaños Leo)
